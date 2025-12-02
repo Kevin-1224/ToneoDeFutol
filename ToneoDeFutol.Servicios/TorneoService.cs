@@ -26,9 +26,9 @@ namespace ToneoDeFutol.Servicios
         // -------------------------------------------------------------------
         public async Task<bool> InscribirEquipo(int torneoId, int equipoId)
         {
-            var torneo = await _context.TorneoTipo
+            var torneo = await _context.Torneo
                                        .Include(t => t.InscripcionesEquipos)
-                                       .FirstOrDefaultAsync(t => t.TorneoID == torneoId);
+                                       .FirstOrDefaultAsync(t => t.Id == torneoId);
 
             if (torneo == null)
                 throw new ArgumentException("Torneo no encontrado.");
@@ -49,7 +49,7 @@ namespace ToneoDeFutol.Servicios
             // Lógica de inscripción (se asume que el Equipo ya existe)
             var inscripcion = new InscripcionEquipo
             {
-                TorneoID = torneoId,
+                Id = torneoId,
                 EquipoID = equipoId,
                 FechaInscripcion = DateTime.Now
             };
@@ -64,9 +64,9 @@ namespace ToneoDeFutol.Servicios
         // -------------------------------------------------------------------
         public async Task<bool> IniciarTorneo(int torneoId)
         {
-            var torneo = await _context.TorneTipo
+            var torneo = await _context.Torneo
                                        .Include(t => t.InscripcionesEquipos)
-                                       .FirstOrDefaultAsync(t => t.TorneoID == torneoId);
+                                       .FirstOrDefaultAsync(t => t.Id == torneoId);
 
             if (torneo == null) throw new ArgumentException("Torneo no encontrado.");
 
@@ -91,8 +91,8 @@ namespace ToneoDeFutol.Servicios
             await _context.SaveChangesAsync();
             return true;
         }
-
+    }
         // -------------------------------------------------------------------
         // RESTRICCIÓN 3: REGISTRO DE RESULTADOS (Validación de Partidos y Concurrencia)
         // -------------------------------------------------------------------
-        public
+ 

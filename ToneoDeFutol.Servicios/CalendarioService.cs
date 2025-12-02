@@ -20,11 +20,11 @@ namespace ToneoDeFutol.Servicios
         // Método principal llamado por TorneoService.IniciarTorneo()
         public async Task GenerarYGuardarCalendario(int torneoId)
         {
-            var torneo = await _context.TorneoTipo
-                                       .FirstOrDefaultAsync(t => t.TorneoID == torneoId);
+            var torneo = await _context.Torneo
+                                       .FirstOrDefaultAsync(t => t.Id == torneoId);
 
             var equipos = await _context.InscripcionEquipo
-                                        .Where(ie => ie.TorneoID == torneoId)
+                                        .Where(ie => ie.Id == torneoId)
                                         .Select(ie => ie.EquipoID)
                                         .ToListAsync();
 
