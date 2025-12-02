@@ -13,7 +13,7 @@ namespace Torneo.Modelos
 
         // Atributos
         public string Nombre { get; set; }
-        public string Entrenador { get; set; }
+        public string Entrenador { get; set; }  
         public string Ciudad { get; set; }
         public List<InscripcionJugador?> InscripcionesJugadores { get; set; } = new List<InscripcionJugador?>();
         public List<InscripcionEquipo?> InscripcionesTorneos { get; set; } = new List<InscripcionEquipo?>();

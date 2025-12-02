@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Futbol.Consola\Futbol.Consola.csproj" />
+    <ProjectReference Include="..\ToneoDeFutol.Api\ToneoDeFutol.Api.csproj" />
+    <ProjectReference Include="..\Torneo.Modelos\Torneo.Modelos.csproj" />
+  </ItemGroup>
+
+</Project>
