@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToneoDeFutol.Api", "ToneoDeFutol.Api\ToneoDeFutol.Api.csproj", "{8C4841E9-FE8E-421B-9D97-0CDCDFA0C81C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Torneo.Modelos", "Torneo.Modelos\Torneo.Modelos.csproj", "{29684DF2-788D-4194-AD6C-7F354FA8EEE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C4841E9-FE8E-421B-9D97-0CDCDFA0C81C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4841E9-FE8E-421B-9D97-0CDCDFA0C81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4841E9-FE8E-421B-9D97-0CDCDFA0C81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4841E9-FE8E-421B-9D97-0CDCDFA0C81C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29684DF2-788D-4194-AD6C-7F354FA8EEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29684DF2-788D-4194-AD6C-7F354FA8EEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29684DF2-788D-4194-AD6C-7F354FA8EEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29684DF2-788D-4194-AD6C-7F354FA8EEE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFCC3C6C-A439-48CE-BBC9-674BA45263D9}
+	EndGlobalSection
+EndGlobal
