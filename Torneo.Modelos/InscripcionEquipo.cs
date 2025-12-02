@@ -18,7 +18,7 @@ namespace Torneo.Modelos
         public string GrupoFaseGrupos { get; set; }
 
 
-        public Torneo? Torneo { get; set; }
+        public TorneoTipo? Torneo { get; set; }
         public Equipo? Equipo { get; set; }
     }
 }

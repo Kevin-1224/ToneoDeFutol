@@ -30,7 +30,7 @@ namespace Torneo.Modelos
         public int VersionResultado { get; set; }
 
         // Propiedades de Navegación (Colecciones y Objetos de Referencia)
-        public Torneo Torneo { get; set; }
+        public TorneoTipo Torneo { get; set; }
         public Equipo EquipoLocal { get; set; }
         public Equipo EquipoVisitante { get; set; }
         public Equipo GanadorPenales { get; set; }

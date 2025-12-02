@@ -1,4 +1,8 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ToneoDeFutolApiContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("ToneoDeFutolApiContext") ?? throw new InvalidOperationException("Connection string 'ToneoDeFutolApiContext' not found.")));
 
 // Add services to the container.
 
